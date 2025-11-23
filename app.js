@@ -15,8 +15,6 @@ function getSession(){const raw = localStorage.getItem(STORAGE_KEYS.SESSION);if(
 function saveSession(s){localStorage.setItem(STORAGE_KEYS.SESSION, JSON.stringify(s))}
 function clearSession(){localStorage.removeItem(STORAGE_KEYS.SESSION)}
 
-(function seed(){if(loadRequests().length===0){createRequest({requester_name:'Dia Sharma',contact_phone:'+91 9988776655',address:'123 Park Lane',city:'Mumbai',state:'MH',zip_code:'400001',latitude:19.0760,longitude:72.8777,household_size:4,dietary_restrictions:'',urgency_level:'medium',food_types_needed:['meals','bread'],additional_notes:'Can collect after 5pm'});createRequest({requester_name:'Ravi Kumar',contact_phone:'+91 8877665544',address:'45 Main Road',city:'Delhi',state:'DL',zip_code:'110001',latitude:28.6139,longitude:77.2090,household_size:2,dietary_restrictions:'vegetarian',urgency_level:'high',food_types_needed:['fresh_produce','snacks'],additional_notes:''});}})()
-
 const root = document.getElementById('view');
 const pageTitle = document.getElementById('pageTitle');
 const userSummary = document.getElementById('userSummary');
