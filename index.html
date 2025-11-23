@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Food Bridge — Beginner Version</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+q3QYQk0hJ6j6d0y6Z3Q6gQ6p2h0hQ5f5YgYb0v3s="
+    crossorigin=""/>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">💚</div>
+        <div>
+          <h2>Food Bridge</h2>
+          <small>Connecting Communities</small>
+        </div>
+      </div>
+      <nav class="nav" id="navLinks">
+        <a href="#home" data-link>Community Map</a>
+        <a href="#request" data-link>Request Food</a>
+        <a href="#browse" data-link>Browse Requests</a>
+        <a href="#profile" data-link>My Profile</a>
+      </nav>
+      <div class="quick-actions" id="quickActions"></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <h1 id="pageTitle">Food Bridge</h1>
+        <div id="userSummary" class="user-summary"></div>
+      </header>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j7kz6Kz8f4Pmx0Ggk1qP6Y6rQ5p5hKp6b+G1h9k="
+    crossorigin=""></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
